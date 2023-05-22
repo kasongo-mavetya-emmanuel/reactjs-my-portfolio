@@ -6,6 +6,7 @@ const H1 = (props) => {
         fontSize: "6.4rem",
         lineHeight: "1.1",
         fontWeight: "bold",
+        marginBottom: `${props.marginBottom || 0}`,
       }}
     >
       {props.text}

@@ -1,0 +1,47 @@
+.hero {
+  background-color: #f4f4f4;
+  position: relative;
+  height: 80vh;
+}
+
+.hero-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+}
+
+.h2-container {
+  position: absolute;
+  right: 0;
+  bottom: 4.8rem;
+}
+
+.bg-1,
+.bg-2,
+.bg-3 {
+  width: 100vh;
+  height: 100vh;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+.bg-1 {
+  top: -7.2rem;
+  right: 18rem;
+}
+
+.bg-2 {
+  top: -7.2rem;
+  right: -10rem;
+}
+
+.bg-3 {
+  right: -48rem;
+  bottom: -90vh;
+}
