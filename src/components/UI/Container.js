@@ -2,7 +2,7 @@ function Container(props) {
   return (
     <div
       style={{
-        maxWidth: "114",
+        maxWidth: "114rem",
         margin: "0 auto",
       }}
     >

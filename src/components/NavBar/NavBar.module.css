@@ -1,0 +1,26 @@
+.header {
+  background-color: #f4f4f4;
+  padding: 2.4rem 0;
+}
+
+.logo {
+  height: 5rem;
+  width: 23rem;
+}
+
+.header-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-grid ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.header-grid ul li {
+  cursor: pointer;
+}
