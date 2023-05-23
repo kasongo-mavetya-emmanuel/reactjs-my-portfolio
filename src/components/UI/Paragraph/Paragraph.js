@@ -7,7 +7,7 @@ const Paragraph = (props) => {
         lineHeight: "1.7",
       }}
     >
-      {props.text}
+      {props.children}
     </p>
   );
 };

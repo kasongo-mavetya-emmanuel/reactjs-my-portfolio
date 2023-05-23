@@ -1,5 +1,6 @@
 import Hero from "../../Hero/Hero";
 import NavBar from "../../NavBar/NavBar";
+import About from "../../About/About";
 
 const Home = function () {
   return (
@@ -7,6 +8,7 @@ const Home = function () {
       <NavBar />
       <main>
         <Hero />
+        <About />
       </main>
     </div>
   );
