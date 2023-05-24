@@ -1,0 +1,35 @@
+.skills-section {
+  background-color: #f4f4f4;
+  height: 90vh;
+  padding: 3.6rem 0rem;
+}
+
+.frontend-headline {
+  text-align: center;
+}
+
+.frontend,
+.tools,
+.backEnd {
+  border: 1px solid rgba(0, 0, 0, 1);
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.frontend {
+  height: 100%;
+  padding: 3.6rem;
+  position: relative;
+}
+
+.tools {
+  position: absolute;
+}
+
+.fontend-in-circle {
+  height: 90%;
+  aspect-ratio: 1;
+  float: right;
+  border-radius: 90%;
+  shape-outside: circle();
+}

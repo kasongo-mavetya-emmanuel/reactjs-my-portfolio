@@ -4,6 +4,7 @@ function Container(props) {
       style={{
         maxWidth: "114rem",
         margin: "0 auto",
+        height: props.height,
       }}
     >
       {props.children}
