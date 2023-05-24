@@ -1,32 +1,70 @@
 .skills-section {
-  background-color: #f4f4f4;
   height: 90vh;
+  background-color: #f4f4f4;
   padding: 3.6rem 0rem;
 }
 
-.frontend-headline {
+.flex-center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container {
+  position: relative;
+  height: 100%;
+  transform: translateX(-15%);
+  display: inline-block;
+}
+
+.skills-headline {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -25%;
+}
+
+.headline {
   text-align: center;
 }
 
 .frontend,
 .tools,
-.backEnd {
-  border: 1px solid rgba(0, 0, 0, 1);
+.backend {
+  border: 1px solid rgba(0, 0, 0, 0.18);
   aspect-ratio: 1;
   border-radius: 50%;
 }
 
 .frontend {
-  height: 100%;
-  padding: 3.6rem;
   position: relative;
+  height: 100%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-
 .tools {
-  position: absolute;
+  height: 95%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.fontend-in-circle {
+.backend {
+  height: 90%;
+  padding-left: 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.frontend-in-circle,
+.tools-in-circle,
+.backend-in-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   height: 90%;
   aspect-ratio: 1;
   float: right;
