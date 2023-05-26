@@ -5,7 +5,7 @@ const BodyLarge = (props) => {
         color: `${props.color || "#303030"}`,
         fontSize: "1.8rem",
         lineHeight: "1.4",
-        fontWeight: "400",
+        fontWeight: "500",
       }}
     >
       {props.text}

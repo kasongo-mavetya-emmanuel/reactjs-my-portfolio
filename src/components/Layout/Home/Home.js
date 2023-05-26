@@ -3,6 +3,7 @@ import NavBar from "../../NavBar/NavBar";
 import About from "../../About/About";
 import Skills from "../../Skills/Skills";
 import Contact from "../../Contact/Contact";
+import Footer from "../../Footer/Footer";
 
 const Home = function () {
   return (
@@ -15,6 +16,7 @@ const Home = function () {
         <Skills />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 };

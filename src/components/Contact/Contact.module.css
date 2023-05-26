@@ -41,6 +41,7 @@
 
 .social-media-in-container img {
   aspect-ratio: 1;
+  cursor: pointer;
   width: 4.8rem;
 }
 

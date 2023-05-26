@@ -13,7 +13,7 @@ const Hero = function () {
           <Container>
             <div className={classes["content"]}>
               <H4
-                text={`I'am Kasongo Mavetya Emmanuel,`}
+                text={`Hi, I'am Kasongo Mavetya Emmanuel,`}
                 marginBottom={"1.2rem"}
               />
               <H1 text={"A FRONTEND DEVELOPER"} marginBottom={"2.4rem"} />
