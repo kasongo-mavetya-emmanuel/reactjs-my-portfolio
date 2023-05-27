@@ -59,10 +59,35 @@
 }
 
 @media (max-width: 75em) {
+  .message-container {
+    flex: 3;
+  }
+
+  .contact-form-in-container {
+    padding: 4rem 4rem;
+  }
+
+  .getin-touch {
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+  }
 }
 
 @media (max-width: 56.25em) {
+  .name-email-container {
+    flex: 2;
+    gap: 4rem;
+    flex-direction: column;
+  }
+
+  .contact-form-in-container {
+    padding: 4rem 4rem;
+  }
 }
 
 @media (max-width: 37.5em) {
+  .getin-touch {
+    margin-top: 1.2rem;
+    padding: 1rem 0rem;
+  }
 }
