@@ -24,3 +24,28 @@
 .header-grid ul li {
   cursor: pointer;
 }
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 65.81em) {
+  .header {
+    padding: 2.4rem 3.6rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .header-grid ul {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 47.81em) {
+  .h2-container {
+    margin-top: 5.6rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 37.5em) {
+}

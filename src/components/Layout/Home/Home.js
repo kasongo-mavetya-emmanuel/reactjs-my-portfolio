@@ -7,7 +7,7 @@ import Footer from "../../Footer/Footer";
 
 const Home = function () {
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <NavBar />
       <main>
         <Hero />

@@ -71,3 +71,12 @@
   border-radius: 90%;
   shape-outside: circle();
 }
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 56.25em) {
+}
+
+@media (max-width: 37.5em) {
+}

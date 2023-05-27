@@ -57,3 +57,12 @@
   border-radius: 0.8rem;
   cursor: pointer;
 }
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 56.25em) {
+}
+
+@media (max-width: 37.5em) {
+}
