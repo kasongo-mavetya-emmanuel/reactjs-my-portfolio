@@ -12,6 +12,14 @@
 }
 
 @media (max-width: 56.25em) {
+  .icon-wrapper {
+    text-align: start;
+    margin-bottom: 3.6rem;
+  }
+
+  .icon {
+    height: 2.4rem;
+  }
 }
 
 @media (max-width: 37.5em) {

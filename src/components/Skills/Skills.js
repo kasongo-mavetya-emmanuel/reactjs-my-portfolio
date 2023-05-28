@@ -77,6 +77,53 @@ const Skills = () => {
             </div>
           </div>
         </div>
+        {/* skills mobile */}
+        <div className={classes["mobile-flex-container"]}>
+          <div className={classes["mobile-h2"]}>
+            <H2 text={"SKILLS"} />
+          </div>
+
+          <div className={classes["frontEnd-mobile-container"]}>
+            <div>
+              <H6 text={"FrontEnd"} />
+            </div>
+            <div className={classes["frontEnd-mobile-icons"]}>
+              <SkillIcon source={reactjs} alt={"react Icon"} />
+              <SkillIcon source={flutter} alt={"flutter Icon"} />
+              <SkillIcon source={html} alt={"html Icon"} />
+              <SkillIcon source={css} alt={"css Icon"} />
+              <SkillIcon source={javascript} alt={"javascript Icon"} />
+              <SkillIcon source={wordPress} alt={"wordPress Icon"} />
+            </div>
+          </div>
+
+          <div className={classes["tools-mobile-container"]}>
+            <div>
+              <H6 text={"Tools"} />
+            </div>
+            <div className={classes["tools-mobile-icons"]}>
+              <SkillIcon source={androidStudio} alt={"android studion Icon"} />
+              <SkillIcon source={vsCode} alt={"vscode Icon"} />
+              <SkillIcon source={git} alt={"git Icon"} />
+              <SkillIcon source={gitHub} alt={"gitub Icon"} />
+              <SkillIcon source={slack} alt={"slack Icon"} />
+              <SkillIcon source={figma} alt={"figma Icon"} />
+            </div>
+          </div>
+
+          <div className={classes["backEnd-mobile-container"]}>
+            <div>
+              <H6 text={"BackEnd"} />
+            </div>
+
+            <div className={classes["backEnd-mobile-icons"]}>
+              <SkillIcon source={nodeJs} alt={"nodejs Icon"} />
+              <SkillIcon source={firebase} alt={"firebase Icon"} />
+              <SkillIcon source={mongoDB} alt={"mongodb Icon"} />
+              <SkillIcon source={sqlite} alt={"sqlite Icon"} />
+            </div>
+          </div>
+        </div>
       </Container>
     </section>
   );
