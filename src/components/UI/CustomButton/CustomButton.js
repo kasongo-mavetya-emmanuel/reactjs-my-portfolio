@@ -3,6 +3,7 @@ import BodyLarge from "../BodyLarge/BodyLarge";
 const CustomButton = (props) => {
   return (
     <button
+      onClick={props.onClick}
       style={{
         backgroundColor: "#303030",
         color: "#fff",

@@ -1,3 +1,5 @@
+import React, { useContext } from "react";
+import SectionsContext from "../../store/sections-context";
 import H2 from "../UI/H2/H2";
 import Container from "../UI/Container";
 import Paragraph from "../UI/Paragraph/Paragraph";
@@ -5,8 +7,10 @@ import classes from "./About.module.css";
 import "aos/dist/aos.css";
 
 const About = () => {
+  const ctx = useContext(SectionsContext);
+
   return (
-    <section className={classes["about-section"]}>
+    <section className={classes["about-section"]} ref={ctx.aboutRef}>
       <Container>
         <div className={classes["content-wrapper"]}>
           <div

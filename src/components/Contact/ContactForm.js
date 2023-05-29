@@ -7,20 +7,20 @@ const ContactForm = () => {
       <div className={classes["contact-form-in-container"]}>
         <div className={classes["name-email-container"]}>
           <div className={classes["name-container"]}>
-            <label for="#name">
+            <label htmlFor="#name">
               <BodyLarge text={"Name"} color={"#737373"} />
             </label>
             <input id="name" type="text" name="name" value="" />
           </div>
           <div className={classes["email-container"]}>
-            <label for="#email">
+            <label htmlFor="#email">
               <BodyLarge text={"Email"} color={"#737373"} />
             </label>
             <input id="email" type="email" name="email" value="" />
           </div>
         </div>
         <div className={classes["message-container"]}>
-          <label for="#message">
+          <label htmlFor="#message">
             <BodyLarge text={"Message"} color={"#737373"} />
           </label>
           <input id="message" type="text" name="message" value="" />

@@ -7,6 +7,7 @@ export const SectionsContextProvider = (props) => {
     <SectionsContext.Provider
       value={{
         heroRef: useRef(),
+        projectsRef: useRef(),
         aboutRef: useRef(),
         skillsRef: useRef(),
         contactRef: useRef(),

@@ -1,3 +1,5 @@
+import React, { useContext } from "react";
+import SectionsContext from "../../store/sections-context";
 import Container from "../UI/Container";
 import classes from "./Hero.module.css";
 import H4 from "../UI/H4/H4";
@@ -7,8 +9,15 @@ import CustomButton from "../UI/CustomButton/CustomButton";
 import "aos/dist/aos.css";
 
 const Hero = function () {
+  const ctx = useContext(SectionsContext);
+
+  function onHireMe(e) {
+    e.preventDefault();
+    ctx.contactRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
-    <section className={classes["hero"]}>
+    <section className={classes["hero"]} ref={ctx.heroRef}>
       <div className={classes["hero-grid"]}>
         <div>
           <Container>
@@ -28,7 +37,7 @@ const Hero = function () {
                   fontSize={"4.8rem"}
                 />
               </div>
-              <CustomButton text={"Hire Me"} />
+              <CustomButton text={"Hire Me"} onClick={onHireMe} />
             </div>
           </Container>
         </div>

@@ -1,3 +1,5 @@
+import React, { useContext } from "react";
+import SectionsContext from "../../store/sections-context";
 import classes from "./Skills.module.css";
 import Container from "../UI/Container";
 import H6 from "../UI/H6/H6";
@@ -22,8 +24,10 @@ import androidStudio from "../../assets/icons/android-studio.svg";
 import "aos/dist/aos.css";
 
 const Skills = () => {
+  const ctx = useContext(SectionsContext);
+
   return (
-    <section className={classes["skills-section"]}>
+    <section className={classes["skills-section"]} ref={ctx.skillsRef}>
       <Container height={"100%"}>
         <div className={classes["flex-center"]}>
           <div className={classes["skills-container"]}>

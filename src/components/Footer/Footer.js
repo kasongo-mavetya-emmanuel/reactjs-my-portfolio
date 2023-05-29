@@ -1,3 +1,5 @@
+import React, { useContext } from "react";
+import SectionsContext from "../../store/sections-context";
 import classes from "./Footer.module.css";
 import Container from "../UI/Container";
 import linkedIn from "../../assets/icons/linkedin.svg";
@@ -7,6 +9,22 @@ import logo from "../../assets/logo.png";
 import BodyLarge from "../UI/BodyLarge/BodyLarge";
 
 const Footer = () => {
+  const ctx = useContext(SectionsContext);
+  function onHome() {
+    ctx.heroRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+  function onAbout() {
+    ctx.aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function onProjects() {
+    // ctx.projectsRef.current.scrollIntoView({behavior: "smooth"});
+  }
+
+  function onSkills() {
+    ctx.skillsRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <footer className={classes["footer"]}>
       <Container>
@@ -25,17 +43,17 @@ const Footer = () => {
               </div>
             </div>
             <ul className={classes["menu-container"]}>
-              <li>
+              <li onClick={onHome}>
                 <BodyLarge text={"Home"} />
               </li>
-              <li>
+              <li onClick={onAbout}>
                 <BodyLarge text={"About"} />
               </li>
-              <li>
+              <li onClick={onProjects}>
                 <BodyLarge text={"Projects"} />
               </li>
-              <li>
-                <BodyLarge text={" Skills"} />
+              <li onClick={onSkills}>
+                <BodyLarge text={"Skills"} />
               </li>
             </ul>
           </div>
