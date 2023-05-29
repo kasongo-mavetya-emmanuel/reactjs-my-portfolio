@@ -27,17 +27,17 @@
   width: 100vh;
   height: 100vh;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
   position: absolute;
 }
 
 .bg-1 {
-  top: -7.2rem;
+  top: -8rem;
   right: 18rem;
 }
 
 .bg-2 {
-  top: -7.2rem;
+  top: -8rem;
   right: -10rem;
 }
 

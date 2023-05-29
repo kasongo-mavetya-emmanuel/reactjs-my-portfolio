@@ -2,13 +2,18 @@ import H2 from "../UI/H2/H2";
 import Container from "../UI/Container";
 import Paragraph from "../UI/Paragraph/Paragraph";
 import classes from "./About.module.css";
+import "aos/dist/aos.css";
 
 const About = () => {
   return (
     <section className={classes["about-section"]}>
       <Container>
         <div className={classes["content-wrapper"]}>
-          <div className={classes["headline"]}>
+          <div
+            className={classes["headline"]}
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <H2 text={"ABOUT ME"} />
           </div>
           <div className={classes["description"]}>

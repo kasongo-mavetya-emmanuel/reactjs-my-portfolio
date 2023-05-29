@@ -19,6 +19,7 @@ import html from "../../assets/icons/html5.svg";
 import css from "../../assets/icons/css3.svg";
 import javascript from "../../assets/icons/javascript.svg";
 import androidStudio from "../../assets/icons/android-studio.svg";
+import "aos/dist/aos.css";
 
 const Skills = () => {
   return (
@@ -26,19 +27,31 @@ const Skills = () => {
       <Container height={"100%"}>
         <div className={classes["flex-center"]}>
           <div className={classes["skills-container"]}>
-            <div className={classes["frontend"]}>
+            <div
+              className={classes["frontend"]}
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <div className={classes["headline"]}>
                 <H6 text={"FrontEnd"} />
               </div>
 
               <div className={classes["frontend-in-circle"]}>
-                <div className={classes["tools"]}>
+                <div
+                  className={classes["tools"]}
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                >
                   <div className={classes["headline"]}>
                     <H6 text={"Tools"} />
                   </div>
 
                   <div className={classes["tools-in-circle"]}>
-                    <div className={classes["backend"]}>
+                    <div
+                      className={classes["backend"]}
+                      data-aos="fade-right"
+                      data-aos-delay="500"
+                    >
                       <div className={classes["headline"]}>
                         <H6 text={"backend"} />
                       </div>
@@ -83,7 +96,11 @@ const Skills = () => {
             <H2 text={"SKILLS"} />
           </div>
 
-          <div className={classes["frontEnd-mobile-container"]}>
+          <div
+            className={classes["frontEnd-mobile-container"]}
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <div>
               <H6 text={"FrontEnd"} />
             </div>
@@ -97,7 +114,11 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className={classes["tools-mobile-container"]}>
+          <div
+            className={classes["tools-mobile-container"]}
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <div>
               <H6 text={"Tools"} />
             </div>
@@ -111,7 +132,11 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className={classes["backEnd-mobile-container"]}>
+          <div
+            className={classes["backEnd-mobile-container"]}
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <div>
               <H6 text={"BackEnd"} />
             </div>
