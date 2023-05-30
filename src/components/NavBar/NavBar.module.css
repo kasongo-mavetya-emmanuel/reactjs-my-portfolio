@@ -1,7 +1,6 @@
 .header {
   background-color: #f4f4f4;
   padding: 2.4rem 0;
-  z-index: 1000;
 }
 
 .logo {
@@ -13,6 +12,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-grid nav {
+  position: relative;
+  z-index: 100;
 }
 
 .header-grid ul {

@@ -10,6 +10,7 @@ const CustomButton = (props) => {
         border: "none",
         padding: "1.2rem 2rem",
         borderRadius: "0.8rem",
+        cursor: "pointer",
       }}
     >
       <BodyLarge text={props.text} color={"#ffff"} />

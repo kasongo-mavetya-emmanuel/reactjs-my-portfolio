@@ -114,6 +114,10 @@
     flex-direction: row;
   }
 
+  .icons-container a {
+    text-decoration: none;
+  }
+
   .contact-headline {
     top: -34%;
     left: 50%;

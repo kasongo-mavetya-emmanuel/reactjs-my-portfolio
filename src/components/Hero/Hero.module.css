@@ -2,6 +2,7 @@
   background-color: #f4f4f4;
   position: relative;
   height: 80vh;
+  z-index: 1;
 }
 
 .hero-grid {

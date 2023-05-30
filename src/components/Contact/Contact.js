@@ -30,13 +30,31 @@ const Contact = () => {
                 <div>
                   <div className={classes["icons-container"]}>
                     <div>
-                      <img src={linkedIn} alt="linkedin Icons" />
+                      <a
+                        href="https://www.linkedin.com/in/kasongo-mavetya-emmanuel-67087015b/"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <img src={linkedIn} alt="linkedin Icons" />
+                      </a>
                     </div>
                     <div>
-                      <img src={gitHub} alt="github Icons" />
+                      <a
+                        href="https://github.com/kasongo-mavetya-emmanuel"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <img src={gitHub} alt="github Icons" />
+                      </a>
                     </div>
                     <div>
-                      <img src={email} alt="email Icons" />
+                      <a
+                        href="mailto:someone@yoursite.com"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <img src={email} alt="email Icons" />
+                      </a>
                     </div>
                   </div>
                 </div>

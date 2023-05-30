@@ -32,6 +32,10 @@
   list-style: none;
 }
 
+.menu-container li {
+  cursor: pointer;
+}
+
 .right-div-flex {
   display: flex;
   gap: 4.8rem;
