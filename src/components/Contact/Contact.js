@@ -12,6 +12,11 @@ import "aos/dist/aos.css";
 const Contact = () => {
   const ctx = useContext(SectionsContext);
 
+  const handleOpenEmail = (e) => {
+    e.preventDefault();
+    window.open("mailto:emmanuelkasongomavetya@gmail.com");
+  };
+
   return (
     <section className={classes["contact-section"]} ref={ctx.contactRef}>
       <div className={classes["top-shape"]}></div>
@@ -48,13 +53,11 @@ const Contact = () => {
                       </a>
                     </div>
                     <div>
-                      <a
-                        href="mailto:someone@yoursite.com"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <img src={email} alt="email Icons" />
-                      </a>
+                      <img
+                        src={email}
+                        alt="email Icons"
+                        onClick={handleOpenEmail}
+                      />
                     </div>
                   </div>
                 </div>
