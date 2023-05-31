@@ -5,6 +5,7 @@ import About from "../../About/About";
 import Skills from "../../Skills/Skills";
 import Contact from "../../Contact/Contact";
 import Footer from "../../Footer/Footer";
+import Projects from "../../Projects/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,7 +19,7 @@ const Home = function () {
       <main>
         <Hero />
         <About />
-        {/* Projects */}
+        <Projects />
         <Skills />
         <Contact />
       </main>
