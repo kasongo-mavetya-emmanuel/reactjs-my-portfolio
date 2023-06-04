@@ -1,39 +1,9 @@
-import LeftSideDescriptionProject from "./LeftSideDescriptionProject";
-import RightSideDescriptionProject from "./RightSideDescriptionProject";
+import MobileProjects from "./MobileProjects";
 
 const Projects = () => {
   return (
     <div>
-      <LeftSideDescriptionProject
-        title={"Acho"}
-        techStack={[]}
-        description={""}
-      />
-      <RightSideDescriptionProject
-        title={"Acho"}
-        techStack={[]}
-        description={""}
-      />
-      <LeftSideDescriptionProject
-        title={"Acho"}
-        techStack={[]}
-        description={""}
-      />
-      <RightSideDescriptionProject
-        title={"Acho"}
-        techStack={[]}
-        description={""}
-      />
-      <LeftSideDescriptionProject
-        title={"Acho"}
-        techStack={[]}
-        description={""}
-      />
-      <RightSideDescriptionProject
-        title={"Acho"}
-        techStack={[]}
-        description={""}
-      />
+      <MobileProjects />
     </div>
   );
 };

@@ -1,0 +1,42 @@
+.screenshot {
+  height: 50rem;
+  width: auto;
+  position: absolute;
+}
+
+.screenshot-left-img1 {
+  left: -25%;
+  bottom: 0;
+}
+
+.screenshot-left-img2 {
+  top: -15%;
+}
+
+.screenshot-left-img3 {
+  right: 15%;
+  bottom: -15%;
+}
+
+.screenshot-left-img4 {
+  right: -10%;
+}
+
+.screenshot-right-img1 {
+  right: -25%;
+  bottom: 0;
+}
+
+.screenshot-right-img2 {
+  top: -15%;
+  right: 0%;
+}
+
+.screenshot-right-img3 {
+  left: 15%;
+  bottom: -15%;
+}
+
+.screenshot-right-img4 {
+  left: -10%;
+}
