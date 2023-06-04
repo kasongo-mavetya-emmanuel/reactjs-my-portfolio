@@ -1,7 +1,6 @@
 const BodyRegular = (props) => {
   return (
     <p
-      key={props.key}
       style={{
         color: "#303030",
         fontSize: "1.6rem",

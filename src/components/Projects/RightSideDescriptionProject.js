@@ -6,8 +6,8 @@ import BodyRegular from "../UI/BodyRegular/BodyRegular";
 
 const RightSideDescriptionProject = (props) => {
   return (
-    <div key={props.key} className={classes["right-side-container"]}>
-      <div className={classes["left-preview"]}>{props.screenShots}</div>
+    <div className={classes["right-side-container"]}>
+      <div className={classes["left-preview"]}>{props.children}</div>
       <div className={classes["right-description"]}>
         <div>
           <H3 text={props.title} />
@@ -15,8 +15,8 @@ const RightSideDescriptionProject = (props) => {
         <div className={classes["tech-right-stack"]}>
           {props.techStack.map((e, index) => {
             return (
-              <div className={classes["tech-right-stack-item"]}>
-                <BodyRegular text={e} key={index} />
+              <div key={index} className={classes["tech-right-stack-item"]}>
+                <BodyRegular text={e} />
               </div>
             );
           })}

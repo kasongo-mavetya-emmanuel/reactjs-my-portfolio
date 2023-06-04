@@ -1,9 +1,11 @@
 import MobileProjects from "./MobileProjects";
+import WebProjects from "./WebProjects";
 
 const Projects = () => {
   return (
     <div>
-      <MobileProjects />
+      <WebProjects></WebProjects>
+      {/* <MobileProjects /> */}
     </div>
   );
 };
