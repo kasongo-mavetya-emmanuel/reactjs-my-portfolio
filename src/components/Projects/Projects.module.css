@@ -45,3 +45,19 @@
   border-right: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 0.8rem;
 }
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 56.25em) {
+  .mobile-tab {
+    transform: translate(-40%, -50%);
+  }
+
+  .web-tab {
+    transform: translate(40%, -50%);
+  }
+}
+
+@media (max-width: 37.5em) {
+}

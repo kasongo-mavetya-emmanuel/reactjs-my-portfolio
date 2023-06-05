@@ -35,3 +35,22 @@
   padding: 1rem 1.2rem;
   border: 1px solid #303030;
 }
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 56.25em) {
+  .left-side-container {
+    flex-direction: column;
+  }
+  .left-description {
+    padding-bottom: 9.6rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .left-description {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+}
