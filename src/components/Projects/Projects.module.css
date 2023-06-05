@@ -1,0 +1,47 @@
+.tab-bar-container {
+  position: relative;
+  position: relative;
+  z-index: 100;
+}
+
+.projects-headline-container {
+  display: flex;
+  padding-top: 6.4rem;
+  padding-bottom: 7.2rem;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.mobile-tab {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 2.4rem 4.8rem;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.web-tab {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 2.4rem 6.4rem;
+  cursor: pointer;
+  transform: translate(50%, -50%);
+}
+
+.selected {
+  border-bottom: 4px solid #000;
+}
+
+.unSelected {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.4);
+}
+
+.mobile-tab:hover,
+.web-tab:hover {
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+  border-left: 1px solid rgba(0, 0, 0, 0.18);
+  border-right: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 0.8rem;
+}

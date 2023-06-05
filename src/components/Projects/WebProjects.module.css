@@ -1,50 +1,50 @@
 .screenshot-left-desktop,
 .screenshot-right-desktop {
-  width: 80rem;
+  width: 50rem;
   height: auto;
   position: absolute;
 }
 
 .screenshot-left-phone,
 .screenshot-right-phone {
-  width: 40rem;
-  height: auto;
+  width: auto;
+  height: 30rem;
   position: absolute;
 }
 
 .screenshot-left-tablet,
 .screenshot-right-tablet {
-  width: 50rem;
-  height: auto;
+  width: auto;
+  height: 40rem;
   position: absolute;
 }
 
 .screenshot-left-desktop {
-  left: -10%;
-  top: -40%;
+  left: 10%;
+  top: -8%;
 }
 
 .screenshot-left-phone {
   bottom: 15%;
-  left: 5%;
+  left: 20%;
 }
 
 .screenshot-left-tablet {
-  right: 5%;
-  bottom: -15%;
+  right: 10%;
+  bottom: -8%;
 }
 
 .screenshot-right-desktop {
-  right: -10%;
-  top: -40%;
+  right: 10%;
+  top: -8%;
 }
 
 .screenshot-right-phone {
   bottom: 15%;
-  right: 5%;
+  right: 20%;
 }
 
 .screenshot-right-tablet {
-  left: 5%;
-  bottom: -15%;
+  left: 10%;
+  bottom: -8%;
 }
