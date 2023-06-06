@@ -35,6 +35,11 @@
   border: 1px solid #303030;
 }
 
+.buttons-wrapper {
+  display: flex;
+  gap: 1.6rem;
+}
+
 @media (max-width: 75em) {
 }
 

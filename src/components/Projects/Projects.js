@@ -6,7 +6,7 @@ import H3 from "../UI/H3/H3";
 import classes from "./Projects.module.css";
 
 const Projects = () => {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   return (
     <div>

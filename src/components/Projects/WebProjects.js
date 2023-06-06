@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LeftSideDescriptionProject from "./LeftSideDescriptionProject";
 import RightSideDescriptionProject from "./RightSideDescriptionProject";
-import teamviewer1 from "../../assets/projects/web/teamviewer1.png";
-import teamviewer2 from "../../assets/projects/web/teamviewer2.png";
-import teamviewer3 from "../../assets/projects/web/teamviewer3.png";
-import table1 from "../../assets/projects/web/table1.png";
-import table2 from "../../assets/projects/web/table2.png";
-import table3 from "../../assets/projects/web/table3.png";
+import teamviewer1 from "../../assets/projects/web/teamviewer1.webp";
+import teamviewer2 from "../../assets/projects/web/teamviewer2.webp";
+import teamviewer3 from "../../assets/projects/web/teamviewer3.webp";
+import table1 from "../../assets/projects/web/table1.webp";
+import table2 from "../../assets/projects/web/table2.webp";
+import table3 from "../../assets/projects/web/table3.webp";
 import classes from "./WebProjects.module.css";
+import lozad from "lozad";
 
 const arrWebProjects = [
   {
@@ -16,24 +17,22 @@ const arrWebProjects = [
       "This is the TeamViewer landing page clone with parallax effets and scrolls animations.",
     techStack: ["react", "css"],
     screenShots: [
-      <img
-        key={0}
-        src={teamviewer1}
-        className={`${classes["screenshot-left-tablet"]}`}
-        alt="teamviewer mockup"
-      />,
-      <img
-        key={1}
-        src={teamviewer2}
-        className={`${classes["screenshot-left-desktop"]}`}
-        alt="teamviewer mockup"
-      />,
-      <img
-        key={2}
-        src={teamviewer3}
-        className={`${classes["screenshot-left-phone"]}`}
-        alt="teamviewer mockup"
-      />,
+      {
+        src: teamviewer1,
+        classes: `${classes["screenshot-left-tablet"]} lozad`,
+        altText: "teamviewer mockup",
+      },
+      {
+        src: teamviewer2,
+        classes: `${classes["screenshot-left-desktop"]} lozad`,
+        altText: "teamviewer mockup",
+      },
+
+      {
+        src: teamviewer3,
+        classes: `${classes["screenshot-left-phone"]} lozad`,
+        altText: "teamviewer mockup",
+      },
     ],
   },
 
@@ -43,29 +42,32 @@ const arrWebProjects = [
       "This is a Web page of a selling table company with scroll animations.",
     techStack: ["react", "css"],
     screenShots: [
-      <img
-        key={0}
-        src={table1}
-        className={`${classes["screenshot-right-tablet"]}`}
-        alt="table mockup"
-      />,
-      <img
-        key={1}
-        src={table2}
-        className={`${classes["screenshot-right-desktop"]}`}
-        alt="table mockup"
-      />,
-      <img
-        key={2}
-        src={table3}
-        className={`${classes["screenshot-right-phone"]}`}
-        alt="table mockup"
-      />,
+      {
+        src: table1,
+        classes: `${classes["screenshot-right-tablet"]} lozad`,
+        altText: "table mockup",
+      },
+      {
+        src: table2,
+        classes: `${classes["screenshot-right-desktop"]} lozad`,
+        altText: "table mockup",
+      },
+
+      {
+        src: table3,
+        classes: `${classes["screenshot-right-phone"]} lozad`,
+        altText: "table mockup",
+      },
     ],
   },
 ];
 
 const WebProjects = () => {
+  useEffect(() => {
+    const observer = lozad();
+    observer.observe();
+  }, []);
+
   return (
     <React.Fragment>
       {arrWebProjects.map((project, index) => {
@@ -76,11 +78,8 @@ const WebProjects = () => {
               title={project.title}
               description={project.description}
               techStack={project.techStack}
-            >
-              {project.screenShots.map((e, index) => {
-                return e;
-              })}
-            </LeftSideDescriptionProject>
+              screenShots={project.screenShots}
+            />
           );
         } else {
           return (
@@ -89,11 +88,8 @@ const WebProjects = () => {
               title={project.title}
               description={project.description}
               techStack={project.techStack}
-            >
-              {project.screenShots.map((e, index) => {
-                return e;
-              })}
-            </RightSideDescriptionProject>
+              screenShots={project.screenShots}
+            />
           );
         }
       })}

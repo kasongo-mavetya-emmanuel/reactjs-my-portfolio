@@ -1,4 +1,5 @@
 import CustomButton from "../UI/CustomButton/CustomButton";
+import CustomOutlinedButton from "../UI/CustomOutlinedButton/CustomOutlinedButton";
 import H3 from "../UI/H3/H3";
 import Paragraph from "../UI/Paragraph/Paragraph";
 import classes from "./LeftSideDescriptionProject.module.css";
@@ -23,11 +24,23 @@ const LeftSideDescriptionProject = (props) => {
         <div>
           <Paragraph>{props.description}</Paragraph>
         </div>
-        <div>
+        <div className={classes["buttons-wrapper"]}>
           <CustomButton text={"Preview"} />
+          <CustomOutlinedButton text={"Source Code"} />
         </div>
       </div>
-      <div className={classes["right-preview"]}>{props.children}</div>
+      <div className={classes["right-preview"]}>
+        {props.screenShots.map((e, index) => {
+          return (
+            <img
+              key={index}
+              data-src={e.src}
+              alt={e.altText}
+              className={e.classes}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
