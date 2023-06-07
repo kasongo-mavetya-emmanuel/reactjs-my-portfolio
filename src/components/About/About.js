@@ -22,20 +22,19 @@ const About = () => {
           </div>
           <div className={classes["description"]}>
             <Paragraph>
-              As a lifelong musician, before tech I taught guitar and voice, ran
-              a rehearsal studio, and booked concerts in NYC and beyond.
+              I am a front-end developer with experience in developing mobile
+              and web applications that are both functional and visually
+              appealing.
               <br />
               &nbsp;
               <br />
-              In 2020, I took a leap and trained in modern app development at
-              Fullstack Academy. I quickly absorbed new concepts, while bringing
-              ambitious ideas and a positive attitude to every challenge.
+              I am passionate about creating innovative, responsive, and
+              user-friendly applications that meet the needs of users. I am a
+              quick learner and enjoy working in a fast-paced environment.
               <br />
               &nbsp;
-              <br />
-              In 2020, I took a leap and trained in modern app When I'm not
-              coding, I'm usually doing yoga, testing out a new recipe, or
-              writing a musical parody on guitar.
+              <br />I am excited to work with a team of experienced developers
+              to create high-quality products that make an impact.
             </Paragraph>
           </div>
         </div>
