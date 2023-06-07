@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import SectionsContext from "../../store/sections-context";
 import MobileProjects from "./MobileProjects";
 import WebProjects from "./WebProjects";
 import H2 from "../UI/H2/H2";
@@ -6,10 +7,12 @@ import H3 from "../UI/H3/H3";
 import classes from "./Projects.module.css";
 
 const Projects = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const ctx = useContext(SectionsContext);
+
+  const [isMobile, setIsMobile] = useState(true);
 
   return (
-    <div>
+    <div ref={ctx.projectsRef}>
       <div className={classes["projects-headline-container"]}>
         <div className={classes["tab-bar-container"]}>
           <H2 text={"PROJECTS"} />

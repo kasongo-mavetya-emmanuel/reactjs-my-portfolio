@@ -23,6 +23,11 @@ const ArrMobileProjects = [
     description:
       "NyolApp is an application that facilitate barberShop Owners to track daily income of the shop,for each coiffeur without internet and it allows to backup their data on cloud.",
     techStack: ["flutter", "sqFlite", "firebase"],
+    previewLink: "",
+    liveLink:
+      "https://play.google.com/store/apps/details?id=com.kasongomavetya.nyola_app",
+    sourceCodeLink: "",
+    isSourceCode: false,
     screenShots: [
       {
         src: nyolapp1,
@@ -53,6 +58,12 @@ const ArrMobileProjects = [
     description:
       "This is an application to control an induction cooker. In the app, the user can change the temperature of the plates, add a timer to automatically limit the cooking time, add cooking modes and turn off the stove.",
     techStack: ["flutter", "hive", "nodejs"],
+    previewLink:
+      "https://drive.google.com/file/d/1u8Np7cBK_aqaJxKMv-_4T5SQ4e8p2wu2/view",
+    liveLink: "",
+    sourceCodeLink: "",
+    isSourceCode: false,
+
     screenShots: [
       {
         src: xcooker1,
@@ -82,6 +93,12 @@ const ArrMobileProjects = [
     description:
       "Eden World is an application for sponsors to send funds to pay school fees to help children, sponsors can also send feedback to the administrator. The administrator is responsible for adding students to the system, assigning students to a sponsor, distributing fees to students, and validating sponsor payments.",
     techStack: ["flutter", "firebase", "stripe", "push-notification"],
+    previewLink:
+      "https://drive.google.com/file/d/1Jvbwb0DI3XAxFzxqQbg5rn5kly58wjUY/view",
+    liveLink: "",
+    sourceCodeLink: "",
+    isSourceCode: false,
+
     screenShots: [
       {
         src: eden1,
@@ -124,6 +141,10 @@ const MobileProjects = () => {
               description={project.description}
               techStack={project.techStack}
               screenShots={project.screenShots}
+              previewLink={project.previewLink}
+              liveLink={project.liveLink}
+              sourceCodeLink={project.sourceCodeLink}
+              isSourceCode={project.isSourceCode}
             />
           );
         } else {
@@ -134,6 +155,10 @@ const MobileProjects = () => {
               description={project.description}
               techStack={project.techStack}
               screenShots={project.screenShots}
+              previewLink={project.previewLink}
+              liveLink={project.liveLink}
+              sourceCodeLink={project.sourceCodeLink}
+              isSourceCode={project.isSourceCode}
             />
           );
         }

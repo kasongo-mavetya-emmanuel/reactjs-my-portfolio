@@ -9,12 +9,11 @@ import classes from "./NavBar.module.css";
 const NavBar = () => {
   const ctx = useContext(SectionsContext);
   function onAbout() {
-    console.log("eeeeeeeeeeee");
     ctx.aboutRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   function onProjects() {
-    // ctx.projectsRef.current.scrollIntoView({behavior: "smooth"});
+    ctx.projectsRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   function onSkills() {

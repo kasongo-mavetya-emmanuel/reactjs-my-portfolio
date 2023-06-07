@@ -6,6 +6,23 @@ import classes from "./RightSideDescriptionProject.module.css";
 import BodyRegular from "../UI/BodyRegular/BodyRegular";
 
 const RightSideDescriptionProject = (props) => {
+  function handleOpenSourceCode(e) {
+    e.preventDefault();
+    if (props.sourceCodeLink) {
+      window.open(props.sourceCodeLink);
+    }
+  }
+
+  function handleOpenLive(e) {
+    e.preventDefault();
+
+    if (props.liveLink) {
+      window.open(props.liveLink);
+    }
+    if (props.previewLink) {
+      window.open(props.previewLink);
+    }
+  }
   return (
     <div className={classes["right-side-container"]}>
       <div className={classes["left-preview"]}>
@@ -38,8 +55,16 @@ const RightSideDescriptionProject = (props) => {
           <Paragraph>{props.description}</Paragraph>
         </div>
         <div className={classes["buttons-wrapper"]}>
-          <CustomButton text={"Preview"} />
-          <CustomOutlinedButton text={"Source Code"} />
+          <CustomButton
+            text={`${props.liveLink ? "Live" : "Preview"}`}
+            onClick={handleOpenLive}
+          />
+          {props.isSourceCode && (
+            <CustomOutlinedButton
+              text={"Source Code"}
+              onClick={handleOpenSourceCode}
+            />
+          )}
         </div>
       </div>
     </div>

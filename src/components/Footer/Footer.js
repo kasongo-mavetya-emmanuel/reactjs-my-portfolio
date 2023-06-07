@@ -18,7 +18,7 @@ const Footer = () => {
   }
 
   function onProjects() {
-    // ctx.projectsRef.current.scrollIntoView({behavior: "smooth"});
+    ctx.projectsRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   function onSkills() {

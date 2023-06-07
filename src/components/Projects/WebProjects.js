@@ -16,6 +16,11 @@ const arrWebProjects = [
     description:
       "This is the TeamViewer landing page clone with parallax effets and scrolls animations.",
     techStack: ["react", "css"],
+    previewLink: "",
+    liveLink: "https://team-viewer-clone.netlify.app",
+    sourceCodeLink:
+      "https://github.com/kasongo-mavetya-emmanuel/reactjs-team-viewer-clone",
+    isSourceCode: true,
     screenShots: [
       {
         src: teamviewer1,
@@ -41,6 +46,11 @@ const arrWebProjects = [
     description:
       "This is a Web page of a selling table company with scroll animations.",
     techStack: ["react", "css"],
+    previewLink: "",
+    liveLink: "https://kamel-tables.netlify.app",
+    sourceCodeLink:
+      "https://github.com/kasongo-mavetya-emmanuel/reactjs-table-selling-webpage",
+    isSourceCode: true,
     screenShots: [
       {
         src: table1,
@@ -79,6 +89,10 @@ const WebProjects = () => {
               description={project.description}
               techStack={project.techStack}
               screenShots={project.screenShots}
+              previewLink={project.previewLink}
+              liveLink={project.liveLink}
+              sourceCodeLink={project.sourceCodeLink}
+              isSourceCode={project.isSourceCode}
             />
           );
         } else {
@@ -89,6 +103,10 @@ const WebProjects = () => {
               description={project.description}
               techStack={project.techStack}
               screenShots={project.screenShots}
+              previewLink={project.previewLink}
+              liveLink={project.liveLink}
+              sourceCodeLink={project.sourceCodeLink}
+              isSourceCode={project.isSourceCode}
             />
           );
         }
