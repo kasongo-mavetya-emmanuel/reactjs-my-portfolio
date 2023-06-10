@@ -21,7 +21,7 @@ const arrWebProjects = [
       "This is a webpage giving an introduction and description about me, my works and skills.",
     techStack: ["react", "css", "emailJs", "figma"],
     previewLink: "",
-    liveLink: "",
+    liveLink: "https://kasongo-mavetya-emmanuel-portfolio.netlify.app",
     sourceCodeLink:
       "https://github.com/kasongo-mavetya-emmanuel/reactjs-my-portfolio",
     isSourceCode: true,
