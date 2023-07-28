@@ -1,11 +1,11 @@
 .icon {
   aspect-ratio: 1;
-  height: 3.6rem;
+  height: 3.2rem;
 }
 
 .icon-wrapper {
   text-align: end;
-  margin-bottom: 3.6rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 75em) {

@@ -21,14 +21,14 @@ import html from "../../assets/icons/html5.svg";
 import css from "../../assets/icons/css3.svg";
 import javascript from "../../assets/icons/javascript.svg";
 import androidStudio from "../../assets/icons/android-studio.svg";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 
 const Skills = () => {
   const ctx = useContext(SectionsContext);
 
   return (
     <section className={classes["skills-section"]} ref={ctx.skillsRef}>
-      <Container height={"100%"}>
+      <Container>
         <div className={classes["flex-center"]}>
           <div className={classes["skills-container"]}>
             <div
@@ -87,10 +87,9 @@ const Skills = () => {
               <SkillIcon source={css} alt={"css Icon"} />
               <SkillIcon source={javascript} alt={"javascript Icon"} />
               <SkillIcon source={wordPress} alt={"wordPress Icon"} />
-            </div>
-
-            <div className={classes["skills-headline"]}>
-              <H2 text={"SKILLS"} />
+              <div className={classes["skills-headline"]}>
+                <H2 text={"SKILLS"} />
+              </div>
             </div>
           </div>
         </div>

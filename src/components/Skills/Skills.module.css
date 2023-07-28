@@ -1,21 +1,20 @@
 .skills-section {
-  height: 90vh;
   background-color: #f4f4f4;
   padding: 3.6rem 0rem;
 }
 
 .flex-center {
-  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .skills-container {
-  position: relative;
-  height: 100%;
-  transform: translateX(-15%);
-  display: inline-block;
+  background-color: red;
+
+  /* position: relative;
+  height: 100%; 
+  
+  display: inline-block; */
 }
 
 .skills-headline {
@@ -23,6 +22,8 @@
   top: 50%;
   transform: translateY(-50%);
   right: -25%;
+  /* 
+  right: -150%;  */
 }
 
 .headline {
@@ -46,13 +47,13 @@
 }
 .tools {
   height: 95%;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .backend {
-  height: 90%;
+  /* height: 90%; */
   padding-left: 1.6rem;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
@@ -66,6 +67,7 @@
   justify-content: center;
   align-items: flex-end;
   height: 90%;
+  padding-left: 1rem;
   aspect-ratio: 1;
   float: right;
   border-radius: 90%;
