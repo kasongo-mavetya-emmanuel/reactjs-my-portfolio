@@ -4,41 +4,69 @@ import RightSideDescriptionProject from "./RightSideDescriptionProject";
 import teamviewer1 from "../../assets/projects/web/teamviewer1.webp";
 import teamviewer2 from "../../assets/projects/web/teamviewer2.webp";
 import teamviewer3 from "../../assets/projects/web/teamviewer3.webp";
-import table1 from "../../assets/projects/web/table1.webp";
-import table2 from "../../assets/projects/web/table2.webp";
-import table3 from "../../assets/projects/web/table3.webp";
-import portfolio1 from "../../assets/projects/web/portfolio1.webp";
-import portfolio2 from "../../assets/projects/web/portfolio2.webp";
-import portfolio3 from "../../assets/projects/web/portfolio3.webp";
-
+import kasBraceletTablet from "../../assets/projects/web/kasBraceletTablet.webp";
+import kasBraceletWeb from "../../assets/projects/web/kasBraceletWeb.webp";
+import kasBraceletPhone from "../../assets/projects/web/kasBraceletMobile.webp";
+import kasTokTablet from "../../assets/projects/web/kasTokTablet.webp";
+import kasTokWeb from "../../assets/projects/web/kasTokWeb.webp";
+import kasTokPhone from "../../assets/projects/web/kasTokMobile.webp";
 import classes from "./WebProjects.module.css";
 import lozad from "lozad";
 
 const arrWebProjects = [
   {
-    title: "My PortFolio",
+    title: "Kas Tok",
     description:
-      "This is a webpage giving an introduction and description about me, my works and skills.",
-    techStack: ["react", "css", "emailJs", "figma"],
+      "Kas Tok is a web application that enables users to share videos with the world, also like and leave comments on other people posts.",
+    techStack: ["nextJS", "tailwind", "cloudinary", "typescript", "sanity"],
     previewLink: "",
-    liveLink: "https://kasongo-mavetya-emmanuel-portfolio.netlify.app",
+    liveLink: "https://kas-tok.vercel.app",
     sourceCodeLink:
-      "https://github.com/kasongo-mavetya-emmanuel/reactjs-my-portfolio",
+      "https://github.com/kasongo-mavetya-emmanuel/nextjs-video-social-media",
     isSourceCode: true,
     screenShots: [
       {
-        src: portfolio1,
+        src: kasTokTablet,
+        classes: `${classes["screenshot-left-tablet"]} lozad`,
+        altText: "kas Tok mockup",
+      },
+      {
+        src: kasTokWeb,
+        classes: `${classes["screenshot-left-desktop"]} lozad`,
+        altText: "kas Tok mockup",
+      },
+
+      {
+        src: kasTokPhone,
+        classes: `${classes["screenshot-left-phone"]} lozad`,
+        altText: "Kas Tok mockup",
+      },
+    ],
+  },
+
+  {
+    title: "Kas Bracelet",
+    description: "e-shop website that sells bracelets.",
+    techStack: ["react", "tailwind", "typescript", "sanity", "stripe"],
+    previewLink: "",
+    liveLink: "https://kasbracelets.netlify.app",
+    sourceCodeLink:
+      "https://github.com/kasongo-mavetya-emmanuel/reactjs-ecommerce",
+    isSourceCode: true,
+    screenShots: [
+      {
+        src: kasBraceletTablet,
         classes: `${classes["screenshot-left-tablet"]} lozad`,
         altText: "teamviewer mockup",
       },
       {
-        src: portfolio2,
+        src: kasBraceletWeb,
         classes: `${classes["screenshot-left-desktop"]} lozad`,
         altText: "teamviewer mockup",
       },
 
       {
-        src: portfolio3,
+        src: kasBraceletPhone,
         classes: `${classes["screenshot-left-phone"]} lozad`,
         altText: "teamviewer mockup",
       },
@@ -46,59 +74,29 @@ const arrWebProjects = [
   },
 
   {
-    title: "TeamViewer Clone",
+    title: "TeamViewer",
     description:
       "This is the TeamViewer landing page clone with parallax effets and scrolls animations.",
-    techStack: ["react", "css"],
+    techStack: ["react", "tailwind", "netlify", "sanity"],
     previewLink: "",
-    liveLink: "https://team-viewer-clone.netlify.app",
+    liveLink: "https://kasbracelets.netlify.app",
     sourceCodeLink:
       "https://github.com/kasongo-mavetya-emmanuel/reactjs-team-viewer-clone",
     isSourceCode: true,
     screenShots: [
       {
         src: teamviewer1,
-        classes: `${classes["screenshot-left-tablet"]} lozad`,
-        altText: "teamviewer mockup",
-      },
-      {
-        src: teamviewer2,
-        classes: `${classes["screenshot-left-desktop"]} lozad`,
-        altText: "teamviewer mockup",
-      },
-
-      {
-        src: teamviewer3,
-        classes: `${classes["screenshot-left-phone"]} lozad`,
-        altText: "teamviewer mockup",
-      },
-    ],
-  },
-
-  {
-    title: "Kamel Tables",
-    description:
-      "This is a Web page of a selling table company with scroll animations.",
-    techStack: ["react", "css"],
-    previewLink: "",
-    liveLink: "https://kamel-tables.netlify.app",
-    sourceCodeLink:
-      "https://github.com/kasongo-mavetya-emmanuel/reactjs-table-selling-webpage",
-    isSourceCode: true,
-    screenShots: [
-      {
-        src: table1,
         classes: `${classes["screenshot-right-tablet"]} lozad`,
         altText: "table mockup",
       },
       {
-        src: table2,
+        src: teamviewer2,
         classes: `${classes["screenshot-right-desktop"]} lozad`,
         altText: "table mockup",
       },
 
       {
-        src: table3,
+        src: teamviewer3,
         classes: `${classes["screenshot-right-phone"]} lozad`,
         altText: "table mockup",
       },
